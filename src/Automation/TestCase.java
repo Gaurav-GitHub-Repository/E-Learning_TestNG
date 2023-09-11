@@ -4,23 +4,23 @@
 	import org.testng.annotations.AfterTest;
 	import org.testng.annotations.BeforeTest;
 	import org.testng.annotations.Test;
-    import static org.testng.Assert.assertEquals;
-    import java.awt.AWTException;
-    import java.awt.Robot;
-    import java.awt.Toolkit;
-    import java.awt.datatransfer.StringSelection;
-    import java.awt.event.KeyEvent;
-    import java.io.File;
+        import static org.testng.Assert.assertEquals;
+    	import java.awt.AWTException;
+    	import java.awt.Robot;
+    	import java.awt.Toolkit;
+    	import java.awt.datatransfer.StringSelection;
+    	import java.awt.event.KeyEvent;
+    	import java.io.File;
    	import java.io.IOException;
    	import java.time.Duration;
-    import java.util.concurrent.TimeUnit;
+    	import java.util.concurrent.TimeUnit;
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.ElementClickInterceptedException;
 	import org.openqa.selenium.JavascriptExecutor;
-    import org.openqa.selenium.Keys;
-    import org.openqa.selenium.OutputType;
-    import org.openqa.selenium.TakesScreenshot;
-    import org.openqa.selenium.WebDriver;
+        import org.openqa.selenium.Keys;
+        import org.openqa.selenium.OutputType;
+    	import org.openqa.selenium.TakesScreenshot;
+    	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.chrome.ChromeDriver;
 	import org.openqa.selenium.io.FileHandler;
@@ -57,7 +57,7 @@
 	  Email.sendKeys("gaurav.pathangej@gmail.com");
 	  
 	  WebElement Password = driver.findElement(By.xpath("//input[@id='login-password']"));
-      Password.clear();
+          Password.clear();
 	  Password.sendKeys("GauravExcelr");
 	     
 	  WebElement Button = driver.findElement(By.xpath("//button[text()='Sign in']"));
@@ -135,7 +135,7 @@
     		throw e;
     		}
 	 
-      driver.navigate().refresh();
+      	  driver.navigate().refresh();
 	 
 	  WebElement SignIn = driver.findElement(By.linkText("Sign In"));
 	  Thread.sleep(1000);
@@ -154,15 +154,15 @@
 	  Button.click();
 
 	  try {
-	  Thread.sleep(1000);
+	  Thread.sleep(5000);
 	  TakesScreenshot srceenshot = ((TakesScreenshot)driver);
 	  File srcfile = srceenshot.getScreenshotAs(OutputType.FILE);
-      File Destination = new File("C:\\Users\\Gaurav\\Documents\\Srceenshot\\regression.png");
-      FileHandler.copy(srcfile, Destination);	 
+      	  File Destination = new File("C:\\Users\\Gaurav\\Documents\\Srceenshot\\regression.png");
+          FileHandler.copy(srcfile, Destination);	 
 	  }
 	  catch(InterruptedException e)
 	  {
-       throw e;
+            throw e;
 	  }
 	  
 	

@@ -43,7 +43,7 @@
 	    driver.manage().window().maximize();
 	    driver.get("https://elearning.excelr.com/");
 	}  
-	
+	//Enter credentials and click on login button
 	@Test(priority=0)
 	public void login() throws InterruptedException, AWTException, IOException
 	{
@@ -68,7 +68,7 @@
 	  String expectedtitle = "Sign in or Register | ExcelR Solutions";
 	  Assert.assertEquals(actualtitle, expectedtitle);
 	}
-	
+	//Click on update profile button, upload button, upload file using robot class, enter details like phone number, headline and validate 
 	@Test(priority=1)
 	public void functional() throws IOException, InterruptedException, AWTException
 	{
@@ -122,7 +122,7 @@
         	  throw e;
           }
       }	 
-
+        //Regression Testing
 	@Test(priority=2)
 	public void regression() throws InterruptedException, IOException
 	{

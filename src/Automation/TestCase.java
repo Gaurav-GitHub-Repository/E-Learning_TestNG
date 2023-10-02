@@ -68,7 +68,7 @@
 	  String expectedtitle = "Sign in or Register | ExcelR Solutions";
 	  Assert.assertEquals(actualtitle, expectedtitle);
 	}
-	//Click on update profile button, upload button, upload file using robot class, enter details like phone number, headline and validate 
+	//Click on update profile button, upload button, upload file using robot class, take screenshot, enter details like phone number, headline and validate 
 	@Test(priority=1)
 	public void functional() throws IOException, InterruptedException, AWTException
 	{

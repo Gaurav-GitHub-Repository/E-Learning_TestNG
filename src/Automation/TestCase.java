@@ -143,11 +143,11 @@
 	  
 	  WebElement Email = driver.findElement(By.xpath("//input[@id='login-email']"));
 	  Thread.sleep(1000);
-	  Email.sendKeys("gaurav.pathangej@gmail.com");
+	  Email.sendKeys("abc@gmail.com");
 	  
 	  WebElement Password = driver.findElement(By.xpath("//input[@id='login-password']"));
 	  Thread.sleep(1000);
-	  Password.sendKeys("GauravExcelr");
+	  Password.sendKeys("abc");
 	     
 	  WebElement Button = driver.findElement(By.xpath("//button[text()='Sign in']"));
 	  Thread.sleep(1000);

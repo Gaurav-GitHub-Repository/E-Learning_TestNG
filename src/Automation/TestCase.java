@@ -54,7 +54,7 @@
 	  
 	  WebElement Email = driver.findElement(By.xpath("//input[@id='login-email']"));
 	  Email.clear();
-	  Email.sendKeys("gaurav.pathangej@gmail.com");
+	  Email.sendKeys("abc@gmail.com");
 	  
 	  WebElement Password = driver.findElement(By.xpath("//input[@id='login-password']"));
           Password.clear();
